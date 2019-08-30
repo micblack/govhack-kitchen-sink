@@ -1,0 +1,34 @@
+{
+  "name": "hackathon-starter-rio",
+  "version": "1.0.0",
+  "description": "Dead simple, no-frills, hackathon starter boilerplate using Vue, Bulma and Readiness.IO",
+  "main": "index.html",
+  "scripts": {
+    "css-postcss": "postcss pub/**/*.css --use autoprefixer --replace",
+    "publish": "rm -r pub && mkdir pub && ncp src pub && npm run css-postcss",
+    "live-reload": "browser-sync start --server --files \"src/**/*\" --startPath /src",
+    "start": "npm run live-reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micblack/hackathon-starter-rio.git"
+  },
+  "keywords": [
+    "hackathon",
+    "vue",
+    "bulma",
+    "readiness.io"
+  ],
+  "author": "Mic Black <mic@micslab.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.7",
+    "ncp": "^2.0.0",
+    "postcss-cli": "^6.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/micblack/hackathon-starter-rio/issues"
+  },
+  "homepage": "https://github.com/micblack/hackathon-starter-rio#readme"
+}

@@ -1,0 +1,35 @@
+@import 'lib/bulma.0.7.5.using-variables.css';
+@import url('//unpkg.com/vue2-animate/dist/vue2-animate.min.css');
+@import url('//fonts.googleapis.com/css?family=Hind&display=swap');
+@import url('//cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.cs');
+@import url('//use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url('//unpkg.com/leaflet/dist/leaflet.css');
+
+:root {
+	--color-primary: #00d1b2;
+	--color-primary-hover: #00b89c;
+	--color-blue: #3273dc;
+	--color-blue-active: #2366d1;
+	--color-link: #3273dc;
+	--font-family: 'Hind', sans-serif;
+}
+
+html,
+body,
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+a { 
+	cursor: pointer;
+}
+
+.content ul {
+	margin-left: 0; /* fix for indented buefy tabs */
+}

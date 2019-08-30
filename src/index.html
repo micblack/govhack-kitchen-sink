@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hackathon Starter</title>
+	
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+	<div id="app">
+		<home-layout>
+			<template #logo>
+				<img class="image" src="/src/media/logo-dark.svg" style="height:40px">
+			</template>
+			<template #menu-links>
+				<b-navbar-item href="#overview">Overview</b-navbar-item>
+				<b-navbar-item href="#examples">Examples</b-navbar-item>
+				<b-navbar-item href="#roadmap">Roadmap</b-navbar-item>
+				<b-navbar-item href="#criteria">Criteria</b-navbar-item>
+			</template>
+			<template #menu-buttons>
+				<a class="button is-light">View Entry</a>
+				<a class="button is-primary"><strong>Watch Video</strong></a>
+			</template>
+			<template #heading>Hackathon Starter Kit</template>
+			<template #subheading>
+				Congratulations! You're running the hackathon-starter-rio project
+			</template>
+			<template #content>
+				<padded-section>
+					<a name="overview"></a>
+		    		<h3>Overview</h3>
+					<p>This project aims to demonstrate how *dataset* and *dataset* can be used to improve *purpose* for *target*. It does this by *method* which is validated through *validation*.</p>
+					<p>For an overview video on the process taken, please see below.</p>
+
+					<!-- <figure class="image is-16by9">
+					  <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/YE7VzlLtp-4?showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</figure> -->
+				</padded-section>
+				<padded-section>
+					<a name="examples"></a>
+					<h3>Examples</h3>
+					<h4>Custom component</h4>
+					<div class="box">
+						<p class="tag">my-component</p>
+						<my-component></my-component>
+					</div>
+					<h4>Charts</h4>
+					<div class="box">
+						<p class="tag">apex-charts</p>
+						<b-tabs>
+							<b-tab-item label="Line Chart">
+								<apexchart width="100%" type="line" :options="linearChart.options" :series="linearChart.series"></apexchart>
+							</b-tab-item>
+							<b-tab-item label="Bar Chart">
+								<apexchart width="100%" type="bar" :options="linearChart.options" :series="linearChart.series"></apexchart>
+							</b-tab-item>
+							<b-tab-item label="Pie Chart">
+								<apexchart width="100%" type="pie" :options="radialChart" :series="radialChart.series"></apexchart>
+							</b-tab-item>
+						</b-tabs>
+					</div>
+					<h4>Live data</h4>
+					<div class="box">
+						<p>Example of readiness.io</p>
+					</div>
+				</padded-section>
+				<padded-section>
+					<a name="criteria"></a>
+					<h3>Criteria</h3>
+					<p>We addressed the following criteria:</p>
+					<h4>Criteria 1</h4>
+					<ul>
+						<li>Reason 1</li>
+						<li>Reason 2</li>
+						<li>Reason 3</li>
+					</ul>
+					<h4>Criteria 2</h4>
+					<ul>
+						<li>Reason 1</li>
+						<li>Reason 2</li>
+						<li>Reason 3</li>
+					</ul>
+				</padded-section>
+			</template>
+			<template #footer>
+				&copy; 2019 MyCoolTeam
+			</template>
+		</home-layout>
+	</div>
+	
+	<script src="//unpkg.com/vue"></script>
+	<script src="//unpkg.com/http-vue-loader"></script>
+	<script src="//unpkg.com/buefy/dist/buefy.min.js"></script>
+	<script src="//unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="//cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js"></script>
+	<script src="lib/readiness.io.standalone.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
